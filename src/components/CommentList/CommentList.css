@@ -2,13 +2,14 @@
   padding: 1rem 0;
 }
 .comment > .comment {
-  padding-left: .5rem;
+  padding-left: 0.1rem;
   margin-bottom: .2rem;
-  border-left: 4px solid black;
+  border-left: 8px solid rgb(210, 210, 210);
 }
 .comment-header {
   display: flex;
   flex-direction: row;
+  align-items: flex-end;
 }
 .comment-author {
   font-weight: bold;
