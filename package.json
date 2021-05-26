@@ -5,7 +5,8 @@
     "re:build": "rescript build",
     "re:clean": "rescript clean",
     "r:start": "react-scripts start",
-    "r:build": "react-scripts build"
+    "r:build": "react-scripts build",
+    "build": "npm run re:build && npm run r:build"
   },
   "dependencies": {
     "@glennsl/bs-json": "^5.0.2",
