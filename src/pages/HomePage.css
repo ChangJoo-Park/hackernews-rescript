@@ -1,0 +1,8 @@
+.stories {
+  display: flex;
+  flex-direction: column;
+}
+
+.stories > .story-item {
+  margin-bottom: .5rem;
+}
