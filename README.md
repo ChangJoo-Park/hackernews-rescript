@@ -13,7 +13,7 @@
 
 ## API
 
-This project use an [Algoria REST API](https://hn.algolia.com/api). It is slow but works well.
+This project uses an [Algoria REST API](https://hn.algolia.com/api). It is slow but works well.
 
 
 ## Installation
