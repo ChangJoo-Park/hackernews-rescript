@@ -1,23 +1,33 @@
 .story-item {
-
+  padding: 0 0.5rem;
 }
 
 .story-item-header {
-
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+.story-item-header-title {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+.story-item-header-domain {
+  color: #828282;
 }
 
 .story-item-footer {
   display: flex;
   flex-direction: row;
+  color: #828282;
+  font-size: 0.8rem;
 }
 
 .story-item-footer > * {
-  margin-right: .25rem;
+  margin-right: 0.25rem;
 }
 
-.story-item-footer .link {
+.story-item-footer-comments {
+  font-size: 0.8rem;
   text-decoration: none;
-}
-.story-item-footer .link:hover {
-  text-decoration: underline;
+  color: #828282;
 }
