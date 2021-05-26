@@ -17,8 +17,10 @@ let make = (~commentList: array<Models.storyChildModel>) => {
       className=`comment comment-${comment.id->Belt.Int.toString}`
       key={comment.id->Belt.Int.toString}
     >
-      <div>{author->React.string}</div>
-      <div>{comment.created_at->Date.fromNow->React.string}</div>
+      <div className="comment-header">
+        <div className="comment-author">{author->React.string}</div>
+        <div className="comment-datetime">{comment.created_at->Date.fromNow->React.string}</div>
+      </div>
       <div
           dangerouslySetInnerHTML={"__html": text}
         />

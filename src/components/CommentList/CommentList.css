@@ -1,9 +1,21 @@
-.comment {
-  padding: 1rem;
-  border: 1px solid black;
-  margin-bottom: .5rem;
+.comment-list-wrap {
+  padding: 1rem 0;
 }
 .comment > .comment {
-  margin-left: 1rem;
-  margin-bottom: .5rem;
+  padding-left: .5rem;
+  margin-bottom: .2rem;
+  border-left: 4px solid black;
+}
+.comment-header {
+  display: flex;
+  flex-direction: row;
+}
+.comment-author {
+  font-weight: bold;
+  margin-right: .2rem;
+}
+
+.comment-datetime {
+  font-size: 0.8rem;
+  color: #828282;
 }
