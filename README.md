@@ -16,7 +16,7 @@
 This project uses an [Algoria REST API](https://hn.algolia.com/api). It is slow but works well.
 
 
-## Installation
+## Installation and Development
 
 ```bash
 git clone https://github.com/ChangJoo-Park/hackernews-rescript
