@@ -1,0 +1,23 @@
+.story-item {
+
+}
+
+.story-item-header {
+
+}
+
+.story-item-footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.story-item-footer > * {
+  margin-right: .25rem;
+}
+
+.story-item-footer .link {
+  text-decoration: none;
+}
+.story-item-footer .link:hover {
+  text-decoration: underline;
+}
