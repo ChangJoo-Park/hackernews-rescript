@@ -9,7 +9,13 @@ let make = (~id: string) => {
   })
 
   let renderStory = switch story {
-  | Some(story) => <div> {story.id->Belt.Int.toString->React.string} </div>
+  | Some(story) => <div>
+    <div>{story.id->Belt.Int.toString->React.string}</div>
+    <div>{story.title->React.string}</div>
+    <div>{story.author->React.string}</div>
+    <div>{story.url->React.string}</div>
+    <CommentList commentList={story.children} />
+    </div>
   | None => <div />
   }
   <div> {"Item Page"->React.string}
