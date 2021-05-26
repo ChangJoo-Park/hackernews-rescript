@@ -1,6 +1,8 @@
 .stories {
   display: flex;
   flex-direction: column;
+  padding: 1rem 0;
+  background-color: #eff1f1;
 }
 
 .stories > .story-item {

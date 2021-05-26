@@ -12,5 +12,5 @@ let make = () => {
     stories->Belt.Array.map(story => <StoryItem key=story.objectID story />)->React.array
   }
 
-  <div> {`홈페이지입니다`->React.string} <div className="stories"> {stories} </div> </div>
+  <div className="stories"> {stories} </div>
 }
