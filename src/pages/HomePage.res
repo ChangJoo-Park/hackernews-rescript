@@ -8,17 +8,15 @@ let make = () => {
     let _ = getStories()
     None
   })
-  let stories = {
+
+  let renderStories =
     stories->Belt.Array.map(story => <StoryItem key=story.objectID story />)->React.array
-  }
   <>
-    <div className="stories">
-      {stories}
-    </div>
+    <div className="stories"> {renderStories} </div>
     <div>
       {"This website use Algolia Search's API "->React.string}
       {"please see "->React.string}
-      <a href="https://hn.algolia.com/api">{"this doc"->React.string}</a>
+      <a href="https://hn.algolia.com/api"> {"this doc"->React.string} </a>
     </div>
   </>
 }
