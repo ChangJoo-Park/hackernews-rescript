@@ -20,8 +20,6 @@ type hitsArrayModel = array<hitItemModel>
 
 type rec storyChildModel = {
   id: int,
-  story_id: int,
-  parent_id: int,
   created_at: string,
   author: option<string>,
   text: option<string>,

@@ -31,8 +31,6 @@ let rec storyChildArrayType = (json) => {
   | Js.Json.JSONArray(json) => Js.Array.map(child => {
       {
         id: field("id", int, child),
-        story_id: field("story_id", int, child),
-        parent_id: field("parent_id", int, child),
         created_at: field("created_at", string, child),
         author: optional(field("author", string), child),
         text: optional(field("text", string), child),
