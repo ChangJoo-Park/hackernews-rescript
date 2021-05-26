@@ -1,21 +1,19 @@
 let nowMillisecond = (): float => Js.Date.now()
 
 let redableMillisecond = (ms: int): (string, string) => {
+  let pluralize = (number: int) => number > 1 ? "s" : ""
   let oneMinute = 60000
   let oneHour = 3600000
   let oneDay = oneHour * 24
   if ms < oneHour {
     let minute = ms / oneMinute
-    let postfix = minute > 1 ? "s" : ""
-    (minute->Belt.Int.toString, `minute${postfix}`)
+    (minute->Belt.Int.toString, `minute${pluralize(minute)}`)
   } else if ms > oneDay {
     let day = ms / oneDay
-    let postfix = day > 1 ? "s" : ""
-    (day->Belt.Int.toString, `day${postfix}`)
+    (day->Belt.Int.toString, `day${pluralize(day)}`)
   } else {
     let hour = ms / oneHour
-    let postfix = hour > 1 ? "s" : ""
-    (hour->Belt.Int.toString, `hour${postfix}`)
+    (hour->Belt.Int.toString, `hour${pluralize(hour)}`)
   }
 }
 
