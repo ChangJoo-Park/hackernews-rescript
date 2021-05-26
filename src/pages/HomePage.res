@@ -10,7 +10,20 @@ let make = () => {
   })
 
   let renderStories =
-    stories->Belt.Array.map(story => <StoryItem key=story.objectID story />)->React.array
+    stories
+    ->Belt.Array.map(story => {
+      <StoryItem
+        key=story.objectID
+        id=story.objectID
+        title=story.title
+        url=story.url
+        points=story.points
+        author=story.author
+        createdAt=story.created_at
+        numberOfComments=story.num_comments
+      />
+    })
+    ->React.array
   <>
     <div className="stories"> {renderStories} </div>
     <div>
