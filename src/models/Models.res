@@ -34,9 +34,3 @@ type storyItemModel = {
   url: string,
   children: array<storyChildModel>
 }
-
-type storiesModel = {
-  page: int,
-  hitsPerPage: int,
-  hits: array<hitItemModel>,
-}
